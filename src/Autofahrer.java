@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Autofahrer {
+public class Autofahrer { //
     public static void main(String[] args) {
         double kP100K = 4.7; // Liter
         double oVP1000K = 0.4; // Liter
