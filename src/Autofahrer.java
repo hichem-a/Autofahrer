@@ -1,13 +1,20 @@
 import java.util.Scanner;
 public class Autofahrer { //
     public static void main(String[] args) {
-        double kP100K = 4.7; // Liter
-        double oVP1000K = 0.4; // Liter
+        double kP100K ;
+        double oVP1000K ;
         double dIK;
+
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Kraftstoffverbraucht des Autos auf 100km ");
+        kP100K = scanner.nextDouble();
+        System.out.print("Wie ist der Ölverbrauch auf 100km ");
+        oVP1000K = scanner.nextDouble();
         System.out.print("Geben Sie die Fahrstrecke in Kilometern ein: ");
         dIK = scanner.nextDouble();
+
         scanner.close();
+
         double kv = (dIK / 100) * kP100K;
         double ov = (dIK / 1000) * oVP1000K;
 
@@ -20,10 +27,8 @@ public class Autofahrer { //
         {
             oe= oe +1;
         }
+        System.out.println("Für die Fahrstrecke von " + dIK + " km benötigen Sie:  "+"Kraftstoffverbrauch: " + kv + " Liter" +"Ölverbrauch: " + oe + " Liter " +"( "+ ov +" ) L " );
 
-        System.out.println("Für die Fahrstrecke von " + dIK + " km benötigen Sie:");
-        System.out.println("Kraftstoffverbrauch: " + kv + " Liter");
-        System.out.println("Ölverbrauch: " + oe + " Liter " +"( "+ ov +" ) L " );
     }
 
 
