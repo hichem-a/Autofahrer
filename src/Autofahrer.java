@@ -30,8 +30,5 @@ public class Autofahrer { //
         System.out.println("Für die Fahrstrecke von " + dIK + " km benötigen Sie:  "+"Kraftstoffverbrauch: " + kv + " Liter" +"Ölverbrauch: " + oe + " Liter " +"( "+ ov +" ) L " );
 
     }
-
-
-
     }
 
